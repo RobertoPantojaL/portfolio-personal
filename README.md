@@ -44,6 +44,12 @@
 </details>
 
 - 📄 `index.html`
-- 📄 `root.py`
 - 📄 `style.css`
 </details>
+<details>
+Puedes Visitar mi portafolio en linea:
+https://nexwey.online/portafolio/
+</details>
+
+
+
