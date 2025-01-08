@@ -1,0 +1,27 @@
+RewriteEngine On
+
+
+
+# Reglas generales para otros archivos
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Reglas para el archivo index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php [L]
+RewriteRule ^$ index.html [L]
+
+# Reglas para el archivo cv
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^cv$ cv.php [L]
+RewriteRule ^cv$ cv.html [L]
+
+# Reglas para el archivo TadeoPantoja.php y TadeoPantoja.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^TadeoPantoja$ TadeoPantoja.php [L]
+RewriteRule ^TadeoPantoja$ TadeoPantoja.html [L]

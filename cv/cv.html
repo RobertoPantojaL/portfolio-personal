@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Tadeo Roberto Pantoja López</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f0f0f0;
+            --text-color: #333;
+        }
+    
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+    
+        .cv-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+    
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+    
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+        }
+    
+    
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        h2 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: #f2f2f2;
+            padding: 0.5rem;
+        }
+    
+        .contact-info {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+    
+        .section {
+            margin-bottom: 2rem;
+        }
+    
+        ul {
+            padding-left: 1.5rem;
+        }
+    
+        li a ,.link {
+            color: #000;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+    
+        li a:hover, .link:hover {
+            color: var(--primary-color);
+        }
+        
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+    
+        .column {
+            flex: 1;
+            min-width: 250px;
+        }
+    
+        @media screen and (max-width: 768px) {
+            .cv-container {
+                padding: 1rem;
+                margin: 1rem;
+            }
+    
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+    
+            h1 {
+                font-size: 2rem;
+            }
+    
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    
+        @media print {
+            body {
+                background-color: white;
+            }
+    
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+    
+            h1 {
+                font-size: 1.8rem;
+            }
+    
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="cv-container">
+        <header class="header">
+            <img src="./20231224_224610 (2).png" alt="Foto de Tadeo Roberto Pantoja López" class="profile-pic">
+            <div>
+                <h1>Tadeo Roberto Pantoja López</h1>
+                <p>Programador Jr. y Especialista en Soporte TI</p>
+            </div>
+        </header>
+
+        <section class="contact-info">
+            <h2>Información de Contacto</h2>
+            <ul>
+                <li>Celular: (+52) 562 084 9509</li>
+                <li>Correo: <a href="mailto:tadeo.pantoja.lopez@gmail.com">tadeo.pantoja.lopez@gmail.com</a></li>
+                <li>Ubicación: Nicolás Romero, EDOMEX</li>
+                <li>Fecha de Nacimiento: 27-Febrero-2001</li>
+                <li>Portafolio: <a href="https://nexwey.online/portafolio" target="_blank" rel="noopener noreferrer">Tadeo_Pantoja</a></li>
+            </ul>
+        </section>
+
+        <section class="profile">
+            <h2>Perfil Profesional</h2>
+            <p>Estudiante de Ingeniería en Sistemas Computacionales con experiencia en soporte técnico, desarrollo de herramientas y gestión de equipos. Apasionado por la tecnología y el aprendizaje continuo, con habilidades en programación, resolución de problemas y mejora de procesos.</p>
+        </section>
+
+        <section class="education">
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <h3>Lic. en Ingeniería en Sistemas Computacionales</h3>
+                    <p>Universidad Tecnológica Latinoamericana en Línea, 2024-Presente</p>
+                    <p>1er semestre en curso</p>
+                </li>
+                <li>
+                    <h3>Lic. en Ing. en Computación</h3>
+                    <p>Universidad Nacional Autónoma de México, 2019</p>
+                    <p>3er semestre, trunca</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2>Certificaciones y Cursos</h2>
+            <ul>
+                <li>Certificación Servicio Home Broad Band redes ALTAN</li>
+                <li>Certificación CRM Altanview360</li>
+                <li>Certificación DC-3 (STPS)</li>
+                <li>Proyecto Launch X de Microsoft Developers (Full Stack)</li>
+                <li>Proyecto Oracle Next Education</li>
+                <li><a href="./../CERTIFICADOS/SOA.pdf" target="_blank" rel="noopener noreferrer">Fundamentos de ChatGPT</a></li>
+                <li><a href="https://www.freecodecamp.org/certification/TadeoPantojaL/responsive-web-design" target="_blank" rel="noopener noreferrer">Responsive Web Design</a></li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Competencias Técnicas</h2>
+            <ul>
+                <li>Lenguajes: C, Java, Python, SQL, HTML, PHP, JavaScript, CSS</li>
+                <li>Herramientas: Git/GitHub, Photoshop, Paquetería Office</li>
+                <li>Habilidades: Automatización de procesos, Desarrollo web, Gestión de bases de datos</li>
+            </ul>
+        </section>
+
+        <section class="soft-skills">
+            <h2>Habilidades Blandas</h2>
+            <ul>
+                <li>Liderazgo y gestión de equipos</li>
+                <li>Resolución de problemas y análisis crítico</li>
+                <li>Comunicación efectiva y trabajo en equipo</li>
+                <li>Adaptabilidad y aprendizaje rápido</li>
+                <li>Gestión del tiempo y organización</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Experiencia Profesional</h2>
+            <article>
+                <h3>PHONEX | Soporte TI en Call Center</h3>
+                <p>Enero 2024 - Presente</p>
+                <ul>
+                    <li>Proporciono soporte técnico in situ y remoto, gestionando redes e infraestructura.</li>
+                    <li>Desarrollo e implemento herramientas CRUD para gestión de inventarios de equipos.</li>
+                    <li>Resuelvo incidencias técnicas para mantener la continuidad operativa.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>NETWEY | Supervisor Back Office y Gestión Front Office</h3>
+                <p>Mayo 2023 – Mayo 2024</p>
+                <ul>
+                    <li>Lideré un equipo de agentes Back Office, asegurando altos estándares de calidad.</li>
+                    <li>Desarrollé una herramienta en HTML, PHP y JavaScript para capacitación de agentes.</li>
+                    <li>Optimicé procesos de Front Office y brindé soporte a la plataforma multicanal.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>NETWEY | Agente Telefónico Back Office</h3>
+                <p>Junio 2021 – Mayo 2023</p>
+                <ul>
+                    <li>Gestioné consultas y resolví problemas de clientes vía soporte telefónico y administrativo.</li>
+                    <li>Realicé seguimiento y coordinación para garantizar resolución eficaz de casos.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>HI MARKETING | BACK OFFICE CRM CHEDRAUI</h3>
+                <p>Marzo 2020 - Febrero 2021</p>
+                <ul>
+                    <li>Administré tickets escalados, resolviendo incidencias variadas y optimizando procesos.</li>
+                    <li>Asesoré al personal de tienda para mejorar la experiencia del cliente y la eficiencia operativa.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

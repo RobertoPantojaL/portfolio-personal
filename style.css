@@ -1,0 +1,387 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #20202b;
+    --text-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* ocultar scroll */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #20202b 0%, #142124 100%);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Projects */
+.projects {
+    padding: 60px 0;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #2a2a38;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-content a {
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    transition: background-color 0.3s ease;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+
+}
+
+.card-content a:hover {
+    background-color: #0057b3;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.tag-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.link{
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    transition: background-color 0.3s ease;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+
+}
+
+.link:hover {
+    background-color: #0057b3;
+}
+
+
+.links  {
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    transition: background-color 0.3s ease;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.links :hover {
+    color: var(--primary-color);
+}
+
+/* Skills */
+.skills {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.catalog-skills {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card-skills {
+    background-color: #2a2a38;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+
+.card-skills:hover {
+    transform: translateY(-5px);
+}
+
+.card-skills i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0c0c0e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        margin-top: 20px;
+    }
+
+    .nav ul li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+}
+.contact-block {
+    background-color: #1a1a23;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-block h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-block p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-block a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-block a:hover {
+    color: var(--primary-color);
+}
+
+.contact-block i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.contact-block form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-block input,
+.contact-block textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a38;
+    color: #ffffff;
+}
+
+.contact-block textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-block button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-block button:hover {
+    background-color: #051627;
+}
+
+.contact-block button i {
+    margin-right: 10px;
+}
+
+.btn-send {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+.btn-download  {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.btn-download a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.btn-download:hover {
+    background-color: #051627;
+}  
